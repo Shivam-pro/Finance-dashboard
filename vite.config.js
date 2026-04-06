@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/Finance-dashboard/",
+  base: "/",
   tailwindcss: {
     config: {
       darkMode: 'class', // enables dark mode via class
