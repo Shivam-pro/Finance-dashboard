@@ -7,15 +7,15 @@ function Transactions() {
   return (
     <div className="w-full dark:bg-(--primary) py-5 pr-4 lg:pr-0 lg:p-0 dark:text-(--text) h-full overflow-scroll">
       <h1 className="text-xl lg:text-2xl font-bold mb-6">Transactions</h1>
-      <div className="flex items-center gap-4 mb-6">
+      <div className="flex flex-wrap items-center gap-4 mb-6">
         <select value={filter} onChange={(e) => setFilter(e.target.value)} className="p-1 text-sm lg:text-lg lg:p-2 dark:bg-(--bg) border rounded" >
           <option value="all">All</option>
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
-        <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} className="p-1 lg:p-2 border dark:bg-(--bg) rounded w-fit" />
+        <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} className="p-1 lg:p-2 border dark:bg-(--bg) rounded w-full lg:w-fit" />
         {role === "admin" && (
-          <button onClick={() => setShowForm(true)} className="bg-green-600 text-white px-4 py-2 rounded" >
+          <button onClick={() => setShowForm(true)} className="bg-green-600 text-white px-2 lg:px-4 py-1 lg:py-2 rounded text-sm lg:text-lg" >
             + Add Transaction
           </button>
         )}
