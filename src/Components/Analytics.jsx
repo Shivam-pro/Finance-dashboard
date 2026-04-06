@@ -32,7 +32,7 @@ function Analytics() {
   return (
     <div className="dark:bg-(--primary) dark:text-(--text) h-full overflow-scroll w-full py-5 pr-4 lg:pr-0 lg:p-0">
       <h1 className="text-xl lg:text-2xl font-bold mb-6">Analytics</h1>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-between">
         {/* Cash Flow Trend */}
         <div className="dark:bg-(--bg) shadow-lg rounded-lg mb-8 w-full h-70 lg:w-[48%] lg:h-100 p-3 lg:p-6">
           <h2 className="dark:text-(--text) mb-4">Cash Flow Trend</h2>
